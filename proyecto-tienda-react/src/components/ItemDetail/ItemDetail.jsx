@@ -1,7 +1,7 @@
 import { Count } from "../Count/Count";
 import styles from "./ItemDetail.module.css"
 
-export const ItemDetail = ({ id, name, artista, stock, img }) => {
+export const ItemDetail = ({ id, name, artista,price, stock, img }) => {
   return (
     <main className={styles.mainDetalle}>
     <div className={styles.cardDetalle}>
@@ -10,6 +10,7 @@ export const ItemDetail = ({ id, name, artista, stock, img }) => {
       <img src= {img} alt={name} className={styles.imageDetalle} />
       <br />
       <br />
+      <h2>Precio: {price} </h2>
       <Count />
     </div>
     </main>

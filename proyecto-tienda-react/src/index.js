@@ -8,5 +8,5 @@ export * from './components/ItemList/ItemList';
 export * from './components/ItemListContainer/ItemListContainer';
 export * from './components/Items/Items';
 export * from './components/NavBar/NavBar';
-export * from './main';
 export * from './components/productos';
+export * from './main';

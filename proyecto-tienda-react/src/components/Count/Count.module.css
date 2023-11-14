@@ -1,0 +1,11 @@
+.count {
+    display: flex;
+    
+}
+
+.numero {
+    font-family: "Alumni Sans Collegiate One", sans-serif;
+    font-weight: lighter;
+    font-size:x-large;
+    color: black;
+}

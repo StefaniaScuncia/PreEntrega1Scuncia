@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Button } from "../Button/Button"
+import styles from "./Count.module.css"
 
 export const Count = ({initial = 0,  max }) => {
   const [count, setCount] = useState(initial);
@@ -19,11 +20,13 @@ export const Count = ({initial = 0,  max }) => {
    }
 
   return (
+    <div className={styles.count}>
     <>
       <Button text="-" variant={"verDetalle"} functionClick={decrement} />
-      <strong> {count} </strong>
+      <strong className={styles.numero}> {count} </strong>
       <Button text="+" variant={"verDetalle"} functionClick={increment} />
     </>
+    </div>
   )
 }
 

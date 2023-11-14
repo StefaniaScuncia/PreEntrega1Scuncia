@@ -7,6 +7,9 @@ h1 {
   }
   
  .cardDetalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   color: rgba(128, 43, 141, 0.903);
   border-style: solid;
   border-color: rgba(128, 43, 141, 0.903);
@@ -14,6 +17,7 @@ h1 {
   padding: 10px;
   margin: 20px;
   background-color: rgba(228, 180, 236, 0.903);
+  border-radius: 10px;
   }
 
   h3 {
