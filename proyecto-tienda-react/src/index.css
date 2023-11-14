@@ -1,37 +1,26 @@
 body {
-  background-color:rgb(0, 0, 0)
+  background-color: rgb(0, 0, 0);
 }
 
-img {
-  width: 80px;
-}
-
-.uwu {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  width: 20%;
-}
-
-li {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+/*h1 {
+  color: rgba(128, 43, 141, 0.903);
   text-align: center;
-  width: 80%;
+  padding: 10px;
+  font-family: "Alumni Sans Collegiate One", sans-serif;
+  font-weight: lighter;
 }
 
-nav {
-  background-color: rgba(229, 245, 198, 0.903);
-  font-family: 'Alumni Sans Collegiate One', sans-serif;
-  color: rgb(12, 12, 12);
-  align-items: center;
-  display: flex;
-  font-size: 180%;
+.cardProductos {
+  color: rgba(128, 43, 141, 0.903);
+  border-style: solid;
+  border-color: rgba(128, 43, 141, 0.903);
+  border-width: thin;
+  padding: 10px;
+  margin: 20px;
 }
 
-h1 {
-  color: rgba(229, 245, 198, 0.903);
+h3 {
+  color: rgba(128, 43, 141, 0.903);
   text-align: center;
-  padding: 20px;
 }
+*/

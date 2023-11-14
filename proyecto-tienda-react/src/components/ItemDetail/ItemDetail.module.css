@@ -1,0 +1,33 @@
+h1 {
+    color: rgba(128, 43, 141, 0.903);
+    text-align: center;
+    padding: 10px;
+    font-family: "Alumni Sans Collegiate One", sans-serif;
+    font-weight: lighter;
+  }
+  
+ .cardDetalle {
+  color: rgba(128, 43, 141, 0.903);
+  border-style: solid;
+  border-color: rgba(128, 43, 141, 0.903);
+  border-width: thick;
+  padding: 10px;
+  margin: 20px;
+  background-color: rgba(228, 180, 236, 0.903);
+  }
+
+  h3 {
+    color: rgba(128, 43, 141, 0.903);
+    text-align: center;
+  }
+
+  .imageDetalle {
+    width: 300px;
+    align-items: center;
+  }
+
+  .mainDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }

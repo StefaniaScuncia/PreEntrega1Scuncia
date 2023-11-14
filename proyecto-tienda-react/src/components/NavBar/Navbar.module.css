@@ -1,0 +1,30 @@
+nav {
+    background-color: rgba(128, 43, 141, 0.903);
+    font-family: "Alumni Sans Collegiate One", sans-serif;
+    color: rgb(12, 12, 12);
+    align-items: center;
+    display: flex;
+    font-size: 180%;
+  }
+
+  .imgLogo {
+    width: 90px;
+    margin: 5px;
+  }
+  
+  li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 80%;
+  }
+
+  ul {
+    color: black;
+
+  }
+
+  a {
+    text-decoration: none;
+  }

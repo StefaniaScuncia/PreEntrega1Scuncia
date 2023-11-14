@@ -1,19 +1,10 @@
-import { useState } from "react";
+import styles from "./CartWidget.module.css"
 
 export const CartWidget = () => {
-  const [count, setCount] = useState(2);
-
- const numHardcodeado = () => {
-    if (count == 2) {
-      return setCount(2);
-    }
-
-    setCount(2);
-}
 
   return (
-    <div className="uwu">
-      <img src="./images/carritocompras.png" alt="carrito"/><div>{count} </div>
+    <div className={styles.carritoCompras}>
+      <img src="../images/carritocompras.png" alt="carrito" className={styles.imgCarrito}/>
     </div>
   );
-};
+}
