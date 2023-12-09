@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "../Button/Button"
 import styles from "./Count.module.css"
 
-export const Count = ({initial = 0,  max }) => {
+export const Count = ({initial = 0,  max, stock, onAdd }) => {
   const [count, setCount] = useState(initial);
 
   const increment = () => { 
@@ -25,6 +25,7 @@ export const Count = ({initial = 0,  max }) => {
       <Button text="-" variant={"verDetalle"} functionClick={decrement} />
       <strong className={styles.numero}> {count} </strong>
       <Button text="+" variant={"verDetalle"} functionClick={increment} />
+      <Button text= "Agregar al carrito"  variant={"siguiente"} functionClick={()=>onAdd(count)}></Button>
     </>
     </div>
   )

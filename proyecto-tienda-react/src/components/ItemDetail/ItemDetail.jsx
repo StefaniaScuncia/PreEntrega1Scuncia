@@ -2,6 +2,12 @@ import { Count } from "../Count/Count";
 import styles from "./ItemDetail.module.css"
 
 export const ItemDetail = ({ id, name, artista,price, stock, img }) => {
+
+  const onAdd = (items) => { 
+    alert(`Se agregaron ${items} al carrito`)
+ }
+
+
   return (
     <main className={styles.mainDetalle}>
     <div className={styles.cardDetalle}>
@@ -11,7 +17,9 @@ export const ItemDetail = ({ id, name, artista,price, stock, img }) => {
       <br />
       <br />
       <h2>Precio: {price} </h2>
-      <Count />
+      <Count stock={stock} onAdd={onAdd} />
+     
+     
     </div>
     </main>
   );

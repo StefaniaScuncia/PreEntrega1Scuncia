@@ -15,8 +15,15 @@
 }
 
 .siguiente {
-    background-color:hotpink;
+    background-color: rgba(128, 43, 141, 0.903);
     color: white;
-    padding: 0.3rem;
-    height: fit-content;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    border-color: black;
+    border-style: solid;
+    border-width: thin;
+    margin-left: 5px;
+    margin-right: 5px;
 }
