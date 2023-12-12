@@ -1,10 +1,13 @@
+import { useState } from "react";
 import { Count } from "../Count/Count";
 import styles from "./ItemDetail.module.css"
+import {Link} from "react-router-dom"
 
 export const ItemDetail = ({ id, name, artista,price, stock, img }) => {
+  const [quantityAdded, setQuantityAdded] = useState(0)
 
-  const onAdd = (items) => { 
-    alert(`Se agregaron ${items} al carrito`)
+  const onAdd = (quantity) => { 
+    setQuantityAdded (quantity)
  }
 
 
@@ -17,9 +20,13 @@ export const ItemDetail = ({ id, name, artista,price, stock, img }) => {
       <br />
       <br />
       <h2>Precio: {price} </h2>
-      <Count stock={stock} onAdd={onAdd} />
-     
-     
+      {
+        quantityAdded > 0 ? (
+          <Link to= "/cart" className={styles.verDetalle}>Terminar compra</Link>
+        ): (
+          <Count stock={stock} onAdd={onAdd} />
+        )
+      }
     </div>
     </main>
   );
